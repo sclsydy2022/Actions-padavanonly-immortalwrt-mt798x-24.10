@@ -9,6 +9,12 @@
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
 #
+# 解决冲突
+rm -rf feeds/luci/applications/luci-app-mosdns
+rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,smartdns}
+rm -rf feeds/packages/utils/v2dat
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 
 # 设置主路由静态IP
 sed -i 's/192.168.6.1/192.168.123.1/g' package/base-files/files/bin/config_generate
