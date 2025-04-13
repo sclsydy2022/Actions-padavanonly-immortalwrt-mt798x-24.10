@@ -41,7 +41,7 @@ rm -rf feeds/kenzo/smartdns
 git clone https://github.com/leshanydy2022/smartdns.git feeds/packages/net/smartdns
 
 # Modify hostname
-# sed -i 's/OpenWrt/LEAN-YDY/g' package/base-files/files/bin/config_generate
+# sed -i 's/ImmortalWrt/ImmortalWrt-YDY/g' package/base-files/files/bin/config_generate
 
 # Modify filename, add date prefix
 sed -i 's/IMG_PREFIX:=/IMG_PREFIX:=$(shell date +"%Y%m%d")-/1' include/image.mk
