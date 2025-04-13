@@ -10,11 +10,11 @@
 # See /LICENSE for more information.
 #
 # 解决冲突
-rm -rf feeds/luci/applications/luci-app-mosdns
-rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,smartdns}
-rm -rf feeds/packages/utils/v2dat
-rm -rf feeds/packages/lang/golang
-git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
+# rm -rf feeds/luci/applications/luci-app-mosdns
+# rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,smartdns}
+# rm -rf feeds/packages/utils/v2dat
+# rm -rf feeds/packages/lang/golang
+# git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 
 # 设置主路由静态IP
 sed -i 's/192.168.6.1/192.168.123.1/g' package/base-files/files/bin/config_generate
@@ -27,9 +27,9 @@ sed -i 's/192.168.6.1/192.168.123.1/g' package/base-files/files/bin/config_gener
 # sed -i 's/luci-theme-bootstrap/luci-theme-bootstrap-mod/g' feeds/luci/collections/luci/Makefile
 
 # 安装luci-app-smartdns和luci-app-adguardhome
-rm -rf feeds/kenzo/luci-app-smartdns/
+rm -rf feeds/luci/applications/luci-app-smartdns/
 #rm -rf feeds/luci/applications/luci-app-adguardhome
-git clone https://github.com/leshanydy2022/luci-app-smartdns.git feeds/kenzo/luci-app-smartdns/
+git clone https://github.com/leshanydy2022/luci-app-smartdns.git feeds/luci/applications/luci-app-smartdns
 #git clone https://github.com/leshanydy2022/luci-app-adguardhome.git package/lean/luci-app-adguardhome
 
 # 为adguardhome插件更换最新的版本
