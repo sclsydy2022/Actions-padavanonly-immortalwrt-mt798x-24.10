@@ -20,11 +20,11 @@ git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 sed -i 's/192.168.6.1/192.168.123.1/g' package/base-files/files/bin/config_generate
 
 # 设置密码为空
-#sed -i '/CYXluq4wUazHjmCDBCqXF/d' package/lean/default-settings/files/zzz-default-settings
+# sed -i '/CYXluq4wUazHjmCDBCqXF/d' package/lean/default-settings/files/zzz-default-settings
 
 # 安装新主题 luci-theme-bootstrap-mod
-#git clone https://github.com/leshanydy2022/luci-theme-bootstrap-mod.git package/lean/luci-theme-bootstrap-mod
-#sed -i 's/luci-theme-bootstrap/luci-theme-bootstrap-mod/g' feeds/luci/collections/luci/Makefile
+# git clone https://github.com/leshanydy2022/luci-theme-bootstrap-mod.git package/lean/luci-theme-bootstrap-mod
+# sed -i 's/luci-theme-bootstrap/luci-theme-bootstrap-mod/g' feeds/luci/collections/luci/Makefile
 
 # 安装luci-app-smartdns和luci-app-adguardhome
 rm -rf feeds/luci/applications/luci-app-smartdns
@@ -41,7 +41,7 @@ rm -rf feeds/kenzo/smartdns
 git clone https://github.com/leshanydy2022/smartdns.git feeds/kenzo/smartdns
 
 # Modify hostname
-#sed -i 's/OpenWrt/LEAN-YDY/g' package/base-files/files/bin/config_generate
+# sed -i 's/OpenWrt/LEAN-YDY/g' package/base-files/files/bin/config_generate
 
 # Modify filename, add date prefix
 sed -i 's/IMG_PREFIX:=/IMG_PREFIX:=$(shell date +"%Y%m%d")-/1' include/image.mk
