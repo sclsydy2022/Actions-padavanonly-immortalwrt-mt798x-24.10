@@ -27,7 +27,7 @@ sed -i 's/192.168.6.1/192.168.123.1/g' package/base-files/files/bin/config_gener
 # sed -i 's/luci-theme-bootstrap/luci-theme-bootstrap-mod/g' feeds/luci/collections/luci/Makefile
 
 # 安装luci-app-smartdns和luci-app-adguardhome
-rm -rf feeds/luci/applications/luci-app-smartdns/
+rm -rf feeds/luci/applications/luci-app-smartdns
 rm -rf feeds/luci/applications/luci-app-adguardhome
 git clone https://github.com/leshanydy2022/luci-app-smartdns.git feeds/luci/applications/luci-app-smartdns
 git clone https://github.com/leshanydy2022/luci-app-adguardhome.git package/lean/luci-app-adguardhome
@@ -37,11 +37,11 @@ rm -rf feeds/packages/net/adguardhome
 git clone https://github.com/leshanydy2022/adguardhome.git feeds/packages/net/adguardhome
 
 # 为smartDNS插件更换最新的版本
-rm -rf feeds/kenzo/smartdns
+rm -rf feeds/packages/net/smartdns
 git clone https://github.com/leshanydy2022/smartdns.git feeds/packages/net/smartdns
 
 # Modify hostname
-# sed -i 's/ImmortalWrt/ImmortalWrt-YDY/g' package/base-files/files/bin/config_generate
+sed -i 's/ImmortalWrt/ImmortalWrt-YDY/g' package/base-files/files/bin/config_generate
 
 # Modify filename, add date prefix
 sed -i 's/IMG_PREFIX:=/IMG_PREFIX:=$(shell date +"%Y%m%d")-/1' include/image.mk
