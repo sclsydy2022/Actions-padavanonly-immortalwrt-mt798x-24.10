@@ -38,7 +38,7 @@ git clone https://github.com/leshanydy2022/adguardhome.git feeds/packages/net/ad
 
 # 为smartDNS插件更换最新的版本
 rm -rf feeds/kenzo/smartdns
-git clone https://github.com/leshanydy2022/smartdns.git feeds/kenzo/smartdns
+git clone https://github.com/leshanydy2022/smartdns.git feeds/packages/net/smartdns
 
 # Modify hostname
 # sed -i 's/OpenWrt/LEAN-YDY/g' package/base-files/files/bin/config_generate
