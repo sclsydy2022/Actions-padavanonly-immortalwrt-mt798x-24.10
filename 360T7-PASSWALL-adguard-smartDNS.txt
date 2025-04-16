@@ -1,0 +1,7 @@
+237大佬源码编译路由器固件。
+源码 https://github.com/padavanonly/immortalwrt-mt798x-24.10
+immortalwrt24.10（闭源MTK驱动）主路由版。
+360T7M路由器
+含smartDNS、adguardhome和PASSWALL
+默认IP地址：192.168.123.1
+密码：空
