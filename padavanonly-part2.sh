@@ -29,7 +29,8 @@ sed -i 's/192.168.6.1/192.168.123.1/g' package/base-files/files/bin/config_gener
 # 安装luci-app-smartdns和luci-app-adguardhome
 rm -rf feeds/luci/applications/luci-app-smartdns
 rm -rf feeds/luci/applications/luci-app-adguardhome
-git clone https://github.com/leshanydy2022/luci-app-smartdns.git feeds/luci/applications/luci-app-smartdns
+# git clone https://github.com/leshanydy2022/luci-app-smartdns.git feeds/luci/applications/luci-app-smartdns
+git clone https://github.com/sclsydy2022/luci-app-smartdns feeds/luci/applications/luci-app-smartdns
 git clone https://github.com/leshanydy2022/luci-app-adguardhome.git package/lean/luci-app-adguardhome
 
 # 为adguardhome插件更换最新的版本
@@ -38,7 +39,8 @@ git clone https://github.com/leshanydy2022/adguardhome.git feeds/packages/net/ad
 
 # 为smartDNS插件更换最新的版本
 rm -rf feeds/packages/net/smartdns
-git clone https://github.com/leshanydy2022/smartdns.git feeds/packages/net/smartdns
+# git clone https://github.com/leshanydy2022/smartdns.git feeds/packages/net/smartdns
+git clone https://github.com/sclsydy2022/smartdns feeds/packages/net/smartdns
 
 # Modify hostname
 sed -i 's/ImmortalWrt/ImmortalWrt-YDY/g' package/base-files/files/bin/config_generate
