@@ -17,7 +17,7 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x-6.6
+  REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x-24.10
   REPO_BRANCH: 2410
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: 2410padavanonly-360T7-adguard-smartDNS.config
@@ -166,4 +166,5 @@ jobs:
         keep_latest: 12
         delete_tags: true
       env:
+
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
