@@ -150,7 +150,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         tag_name: ${{ steps.tag.outputs.release_tag }}
-        body_path: 360T7-adguard-smartDNS.txt
+        body_path: 2410-360T7-adguard-smartDNS.txt
         files: ${{ env.FIRMWARE }}/*
 
     - name: Delete workflow runs
