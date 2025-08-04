@@ -32,13 +32,13 @@ rm -rf feeds/luci/applications/luci-app-adguardhome
 # git clone https://github.com/leshanydy2022/luci-app-smartdns.git feeds/luci/applications/luci-app-smartdns
 git clone https://github.com/sclsydy2022/luci-app-smartdns feeds/luci/applications/luci-app-smartdns
 # git clone https://github.com/leshanydy2022/luci-app-adguardhome.git package/lean/luci-app-adguardhome
-# git clone https://github.com/leshanydy2022/luci-app-adguardhome.git feeds/luci/applications/luci-app-adguardhome
-git clone https://github.com/sclsydy2022/luci-app-adguardhome feeds/luci/applications/luci-app-adguardhome
+git clone https://github.com/leshanydy2022/luci-app-adguardhome.git feeds/luci/applications/luci-app-adguardhome
+# git clone https://github.com/sclsydy2022/luci-app-adguardhome feeds/luci/applications/luci-app-adguardhome
 
 # 为adguardhome插件更换最新的版本
 rm -rf feeds/packages/net/adguardhome
-# git clone https://github.com/leshanydy2022/adguardhome.git feeds/packages/net/adguardhome
-git clone https://github.com/sclsydy2022/adguardhome feeds/packages/net/adguardhome
+git clone https://github.com/leshanydy2022/adguardhome.git feeds/packages/net/adguardhome
+# git clone https://github.com/sclsydy2022/adguardhome feeds/packages/net/adguardhome
 
 # 为smartDNS插件更换最新的版本
 rm -rf feeds/packages/net/smartdns
